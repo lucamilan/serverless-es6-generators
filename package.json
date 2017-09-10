@@ -1,0 +1,19 @@
+{
+  "name": "serverless-es6-generators",
+  "version": "1.0.0",
+  "description": "A simple project to demonstrate how to use es6 generators with Lambda",
+  "main": "handler.js",
+  "scripts": {
+    "deploy": "sls deploy -s dev"
+  },
+  "author": "Luca Milan",
+  "license": "ISC",
+  "dependencies": {
+    "co":"4.6.0",
+    "request": "2.81.0",
+    "request-promise": "4.2.1"
+  },
+  "devDependencies": {
+    "aws-sdk": "2.112.0"
+  }
+}

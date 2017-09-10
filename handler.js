@@ -1,8 +1,3 @@
-# serverless-es6-generators
-
-## Code
-
-```javascript
 'use strict'
 
 const co = require('co')
@@ -25,20 +20,3 @@ module.exports.fetcher = co.wrap(function* (event, context, callback) {
   let content = yield getWebPage(url)
   callback(null, content)
 })
-```
-
-## How to test
-
-git clone https://github.com/lucamilan/serverless-es6-generators
-
-npm install
-
-### Happy path
-
-sls invoke local -f getPage --data '{"url":"https://google.com"}'
-
-### Worst case
-
-sls invoke local -f getPage --data '{"url":"https://junk-google.com"}'
-
-
